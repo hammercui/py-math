@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -rdynamic CMakeFiles/precomp.dir/examples/precomp.c.o -o precomp  liblzo2.a 

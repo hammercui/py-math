@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -rdynamic CMakeFiles/testmini.dir/minilzo/testmini.c.o CMakeFiles/testmini.dir/minilzo/minilzo.c.o -o testmini 

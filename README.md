@@ -1,3 +1,9 @@
+### 安装包
+pip install xlrd==1.2.0
+pip3 install  python-lzo
+sudo apt-get install python-lzo zlib1g-dev unzip
+
+
 ### 依赖管理方案一
 
 缺点： 依赖安装到global

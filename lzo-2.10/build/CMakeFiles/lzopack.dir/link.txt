@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -rdynamic CMakeFiles/lzopack.dir/examples/lzopack.c.o -o lzopack  liblzo2.a 

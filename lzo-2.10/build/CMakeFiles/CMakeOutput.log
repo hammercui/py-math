@@ -1,0 +1,1625 @@
+The system is: Linux - 5.10.60-amd64-desktop - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dc378/fast && /usr/bin/make  -f CMakeFiles/cmTC_dc378.dir/build.make CMakeFiles/cmTC_dc378.dir/build
+make[1]: Entering directory '/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Uos 8.3.0.3-3+rebuild' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 8.3.0 (Uos 8.3.0.3-3+rebuild) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/8/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o -version -o /tmp/cch8f4Jj.s
+GNU C17 (Uos 8.3.0.3-3+rebuild) version 8.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/8/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/8/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Uos 8.3.0.3-3+rebuild) version 8.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: b0aa96b3fb90562a90ec754591a6a020
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o /tmp/cch8f4Jj.s
+GNU assembler version 2.31.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Uos) 2.31.1
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_dc378
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc378.dir/link.txt --verbose=1
+/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o -o cmTC_dc378 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Uos 8.3.0.3-3+rebuild' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 8.3.0 (Uos 8.3.0.3-3+rebuild) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_dc378' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cciEpirq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dc378 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_dc378' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/8/include]
+    add: [/usr/local/include]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/8/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/8/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed] ==> [/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/8/include;/usr/local/include;/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_dc378/fast && /usr/bin/make  -f CMakeFiles/cmTC_dc378.dir/build.make CMakeFiles/cmTC_dc378.dir/build]
+  ignore line: [make[1]: Entering directory '/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Uos 8.3.0.3-3+rebuild' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Uos 8.3.0.3-3+rebuild) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/8/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o -version -o /tmp/cch8f4Jj.s]
+  ignore line: [GNU C17 (Uos 8.3.0.3-3+rebuild) version 8.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/8/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/8/include-fixed]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Uos 8.3.0.3-3+rebuild) version 8.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: b0aa96b3fb90562a90ec754591a6a020]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o /tmp/cch8f4Jj.s]
+  ignore line: [GNU assembler version 2.31.1 (x86_64-linux-gnu) using BFD version (GNU Binutils for Uos) 2.31.1]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_dc378]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc378.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o -o cmTC_dc378 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Uos 8.3.0.3-3+rebuild' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Uos 8.3.0.3-3+rebuild) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_dc378' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cciEpirq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dc378 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/8/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cciEpirq.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_dc378] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/8/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/8/crtbegin.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../..]
+    arg [CMakeFiles/cmTC_dc378.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/8/crtend.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/8/crtend.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crt1.o] ==> [/usr/lib/x86_64-linux-gnu/crt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8] ==> [/usr/lib/gcc/x86_64-linux-gnu/8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/crt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/8/crtbegin.o;/usr/lib/gcc/x86_64-linux-gnu/8/crtend.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3b369/fast && /usr/bin/make  -f CMakeFiles/cmTC_3b369.dir/build.make CMakeFiles/cmTC_3b369.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3b369.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3b369.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3b369
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b369.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_3b369.dir/CheckIncludeFile.c.o -o cmTC_3b369 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file ctype.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b6730/fast && /usr/bin/make  -f CMakeFiles/cmTC_b6730.dir/build.make CMakeFiles/cmTC_b6730.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b6730.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b6730.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b6730
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6730.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b6730.dir/CheckIncludeFile.c.o -o cmTC_b6730 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file dirent.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_28a27/fast && /usr/bin/make  -f CMakeFiles/cmTC_28a27.dir/build.make CMakeFiles/cmTC_28a27.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_28a27.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_28a27.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_28a27
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28a27.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_28a27.dir/CheckIncludeFile.c.o -o cmTC_28a27 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0d57c/fast && /usr/bin/make  -f CMakeFiles/cmTC_0d57c.dir/build.make CMakeFiles/cmTC_0d57c.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0d57c.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0d57c.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0d57c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d57c.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_0d57c.dir/CheckIncludeFile.c.o -o cmTC_0d57c 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_05c0e/fast && /usr/bin/make  -f CMakeFiles/cmTC_05c0e.dir/build.make CMakeFiles/cmTC_05c0e.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_05c0e.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_05c0e.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_05c0e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05c0e.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_05c0e.dir/CheckIncludeFile.c.o -o cmTC_05c0e 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file float.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d2c4e/fast && /usr/bin/make  -f CMakeFiles/cmTC_d2c4e.dir/build.make CMakeFiles/cmTC_d2c4e.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d2c4e.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d2c4e.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d2c4e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2c4e.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_d2c4e.dir/CheckIncludeFile.c.o -o cmTC_d2c4e 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b3458/fast && /usr/bin/make  -f CMakeFiles/cmTC_b3458.dir/build.make CMakeFiles/cmTC_b3458.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b3458.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b3458.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b3458
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3458.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b3458.dir/CheckIncludeFile.c.o -o cmTC_b3458 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4f5e4/fast && /usr/bin/make  -f CMakeFiles/cmTC_4f5e4.dir/build.make CMakeFiles/cmTC_4f5e4.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4f5e4.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4f5e4.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4f5e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f5e4.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_4f5e4.dir/CheckIncludeFile.c.o -o cmTC_4f5e4 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_333d6/fast && /usr/bin/make  -f CMakeFiles/cmTC_333d6.dir/build.make CMakeFiles/cmTC_333d6.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_333d6.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_333d6.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_333d6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_333d6.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_333d6.dir/CheckIncludeFile.c.o -o cmTC_333d6 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file setjmp.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b0606/fast && /usr/bin/make  -f CMakeFiles/cmTC_b0606.dir/build.make CMakeFiles/cmTC_b0606.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b0606.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b0606.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b0606
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0606.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b0606.dir/CheckIncludeFile.c.o -o cmTC_b0606 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_131c6/fast && /usr/bin/make  -f CMakeFiles/cmTC_131c6.dir/build.make CMakeFiles/cmTC_131c6.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_131c6.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_131c6.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_131c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_131c6.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_131c6.dir/CheckIncludeFile.c.o -o cmTC_131c6 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cf238/fast && /usr/bin/make  -f CMakeFiles/cmTC_cf238.dir/build.make CMakeFiles/cmTC_cf238.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_cf238.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_cf238.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_cf238
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf238.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_cf238.dir/CheckIncludeFile.c.o -o cmTC_cf238 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_29c33/fast && /usr/bin/make  -f CMakeFiles/cmTC_29c33.dir/build.make CMakeFiles/cmTC_29c33.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_29c33.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_29c33.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_29c33
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29c33.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_29c33.dir/CheckIncludeFile.c.o -o cmTC_29c33 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_09eed/fast && /usr/bin/make  -f CMakeFiles/cmTC_09eed.dir/build.make CMakeFiles/cmTC_09eed.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_09eed.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_09eed.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_09eed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09eed.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_09eed.dir/CheckIncludeFile.c.o -o cmTC_09eed 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file stdio.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1d4f0/fast && /usr/bin/make  -f CMakeFiles/cmTC_1d4f0.dir/build.make CMakeFiles/cmTC_1d4f0.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1d4f0.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1d4f0.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1d4f0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d4f0.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_1d4f0.dir/CheckIncludeFile.c.o -o cmTC_1d4f0 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_81d1e/fast && /usr/bin/make  -f CMakeFiles/cmTC_81d1e.dir/build.make CMakeFiles/cmTC_81d1e.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_81d1e.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_81d1e.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_81d1e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81d1e.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_81d1e.dir/CheckIncludeFile.c.o -o cmTC_81d1e 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_47f28/fast && /usr/bin/make  -f CMakeFiles/cmTC_47f28.dir/build.make CMakeFiles/cmTC_47f28.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_47f28.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_47f28.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_47f28
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47f28.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_47f28.dir/CheckIncludeFile.c.o -o cmTC_47f28 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f527b/fast && /usr/bin/make  -f CMakeFiles/cmTC_f527b.dir/build.make CMakeFiles/cmTC_f527b.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f527b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f527b.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f527b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f527b.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_f527b.dir/CheckIncludeFile.c.o -o cmTC_f527b 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file time.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_600b2/fast && /usr/bin/make  -f CMakeFiles/cmTC_600b2.dir/build.make CMakeFiles/cmTC_600b2.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_600b2.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_600b2.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_600b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_600b2.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_600b2.dir/CheckIncludeFile.c.o -o cmTC_600b2 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_989cc/fast && /usr/bin/make  -f CMakeFiles/cmTC_989cc.dir/build.make CMakeFiles/cmTC_989cc.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_989cc.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_989cc.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_989cc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_989cc.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_989cc.dir/CheckIncludeFile.c.o -o cmTC_989cc 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file utime.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_26602/fast && /usr/bin/make  -f CMakeFiles/cmTC_26602.dir/build.make CMakeFiles/cmTC_26602.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_26602.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_26602.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_26602
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26602.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_26602.dir/CheckIncludeFile.c.o -o cmTC_26602 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file sys/mman.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ad556/fast && /usr/bin/make  -f CMakeFiles/cmTC_ad556.dir/build.make CMakeFiles/cmTC_ad556.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_ad556.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ad556.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ad556
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad556.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_ad556.dir/CheckIncludeFile.c.o -o cmTC_ad556 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_70f2e/fast && /usr/bin/make  -f CMakeFiles/cmTC_70f2e.dir/build.make CMakeFiles/cmTC_70f2e.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_70f2e.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_70f2e.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_70f2e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70f2e.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_70f2e.dir/CheckIncludeFile.c.o -o cmTC_70f2e 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c73bc/fast && /usr/bin/make  -f CMakeFiles/cmTC_c73bc.dir/build.make CMakeFiles/cmTC_c73bc.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c73bc.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c73bc.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c73bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c73bc.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_c73bc.dir/CheckIncludeFile.c.o -o cmTC_c73bc 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_913ce/fast && /usr/bin/make  -f CMakeFiles/cmTC_913ce.dir/build.make CMakeFiles/cmTC_913ce.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_913ce.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_913ce.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_913ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_913ce.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_913ce.dir/CheckIncludeFile.c.o -o cmTC_913ce 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3f9aa/fast && /usr/bin/make  -f CMakeFiles/cmTC_3f9aa.dir/build.make CMakeFiles/cmTC_3f9aa.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3f9aa.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3f9aa.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3f9aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f9aa.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_3f9aa.dir/CheckIncludeFile.c.o -o cmTC_3f9aa 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file sys/wait.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_14715/fast && /usr/bin/make  -f CMakeFiles/cmTC_14715.dir/build.make CMakeFiles/cmTC_14715.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_14715.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_14715.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_14715
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14715.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_14715.dir/CheckIncludeFile.c.o -o cmTC_14715 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_63ebe/fast && /usr/bin/make  -f CMakeFiles/cmTC_63ebe.dir/build.make CMakeFiles/cmTC_63ebe.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_63ebe.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_63ebe.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_63ebe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63ebe.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_63ebe.dir/CheckIncludeFile.c.o -o cmTC_63ebe 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1b400/fast && /usr/bin/make  -f CMakeFiles/cmTC_1b400.dir/build.make CMakeFiles/cmTC_1b400.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1b400.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1b400.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1b400
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b400.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_1b400.dir/CheckIncludeFile.c.o -o cmTC_1b400 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_adc2e/fast && /usr/bin/make  -f CMakeFiles/cmTC_adc2e.dir/build.make CMakeFiles/cmTC_adc2e.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_adc2e.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_adc2e.dir/CheckIncludeFile.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_adc2e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adc2e.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_adc2e.dir/CheckIncludeFile.c.o -o cmTC_adc2e 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of short passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c6495/fast && /usr/bin/make  -f CMakeFiles/cmTC_c6495.dir/build.make CMakeFiles/cmTC_c6495.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c6495.dir/mfx_SIZEOF_SHORT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c6495.dir/mfx_SIZEOF_SHORT.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_SHORT.c
+Linking C executable cmTC_c6495
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6495.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_c6495.dir/mfx_SIZEOF_SHORT.c.o -o cmTC_c6495 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bcf4d/fast && /usr/bin/make  -f CMakeFiles/cmTC_bcf4d.dir/build.make CMakeFiles/cmTC_bcf4d.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_bcf4d.dir/mfx_SIZEOF_INT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bcf4d.dir/mfx_SIZEOF_INT.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_INT.c
+Linking C executable cmTC_bcf4d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcf4d.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_bcf4d.dir/mfx_SIZEOF_INT.c.o -o cmTC_bcf4d 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_41b06/fast && /usr/bin/make  -f CMakeFiles/cmTC_41b06.dir/build.make CMakeFiles/cmTC_41b06.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_41b06.dir/mfx_SIZEOF_LONG.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_41b06.dir/mfx_SIZEOF_LONG.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_LONG.c
+Linking C executable cmTC_41b06
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41b06.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_41b06.dir/mfx_SIZEOF_LONG.c.o -o cmTC_41b06 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_db401/fast && /usr/bin/make  -f CMakeFiles/cmTC_db401.dir/build.make CMakeFiles/cmTC_db401.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_db401.dir/mfx_SIZEOF_LONG_LONG.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_db401.dir/mfx_SIZEOF_LONG_LONG.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_LONG_LONG.c
+Linking C executable cmTC_db401
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db401.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_db401.dir/mfx_SIZEOF_LONG_LONG.c.o -o cmTC_db401 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of void * passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d915d/fast && /usr/bin/make  -f CMakeFiles/cmTC_d915d.dir/build.make CMakeFiles/cmTC_d915d.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d915d.dir/mfx_SIZEOF_VOID_P.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d915d.dir/mfx_SIZEOF_VOID_P.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_VOID_P.c
+Linking C executable cmTC_d915d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d915d.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_d915d.dir/mfx_SIZEOF_VOID_P.c.o -o cmTC_d915d 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c9ab2/fast && /usr/bin/make  -f CMakeFiles/cmTC_c9ab2.dir/build.make CMakeFiles/cmTC_c9ab2.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c9ab2.dir/mfx_SIZEOF_SIZE_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c9ab2.dir/mfx_SIZEOF_SIZE_T.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_SIZE_T.c
+Linking C executable cmTC_c9ab2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9ab2.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_c9ab2.dir/mfx_SIZEOF_SIZE_T.c.o -o cmTC_c9ab2 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of ptrdiff_t passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8ebda/fast && /usr/bin/make  -f CMakeFiles/cmTC_8ebda.dir/build.make CMakeFiles/cmTC_8ebda.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8ebda.dir/mfx_SIZEOF_PTRDIFF_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8ebda.dir/mfx_SIZEOF_PTRDIFF_T.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_PTRDIFF_T.c
+Linking C executable cmTC_8ebda
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ebda.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_8ebda.dir/mfx_SIZEOF_PTRDIFF_T.c.o -o cmTC_8ebda 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of intmax_t passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fc5bb/fast && /usr/bin/make  -f CMakeFiles/cmTC_fc5bb.dir/build.make CMakeFiles/cmTC_fc5bb.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_fc5bb.dir/mfx_SIZEOF_INTMAX_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fc5bb.dir/mfx_SIZEOF_INTMAX_T.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_INTMAX_T.c
+Linking C executable cmTC_fc5bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc5bb.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_fc5bb.dir/mfx_SIZEOF_INTMAX_T.c.o -o cmTC_fc5bb 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of uintmax_t passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2cc3f/fast && /usr/bin/make  -f CMakeFiles/cmTC_2cc3f.dir/build.make CMakeFiles/cmTC_2cc3f.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_2cc3f.dir/mfx_SIZEOF_UINTMAX_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2cc3f.dir/mfx_SIZEOF_UINTMAX_T.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_UINTMAX_T.c
+Linking C executable cmTC_2cc3f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2cc3f.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_2cc3f.dir/mfx_SIZEOF_UINTMAX_T.c.o -o cmTC_2cc3f 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of intptr_t passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_59639/fast && /usr/bin/make  -f CMakeFiles/cmTC_59639.dir/build.make CMakeFiles/cmTC_59639.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_59639.dir/mfx_SIZEOF_INTPTR_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_59639.dir/mfx_SIZEOF_INTPTR_T.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_INTPTR_T.c
+Linking C executable cmTC_59639
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59639.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_59639.dir/mfx_SIZEOF_INTPTR_T.c.o -o cmTC_59639 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of uintptr_t passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fcb07/fast && /usr/bin/make  -f CMakeFiles/cmTC_fcb07.dir/build.make CMakeFiles/cmTC_fcb07.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_fcb07.dir/mfx_SIZEOF_UINTPTR_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fcb07.dir/mfx_SIZEOF_UINTPTR_T.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_UINTPTR_T.c
+Linking C executable cmTC_fcb07
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fcb07.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_fcb07.dir/mfx_SIZEOF_UINTPTR_T.c.o -o cmTC_fcb07 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of float passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_68862/fast && /usr/bin/make  -f CMakeFiles/cmTC_68862.dir/build.make CMakeFiles/cmTC_68862.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_68862.dir/mfx_SIZEOF_FLOAT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_68862.dir/mfx_SIZEOF_FLOAT.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_FLOAT.c
+Linking C executable cmTC_68862
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68862.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_68862.dir/mfx_SIZEOF_FLOAT.c.o -o cmTC_68862 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of double passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4832a/fast && /usr/bin/make  -f CMakeFiles/cmTC_4832a.dir/build.make CMakeFiles/cmTC_4832a.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4832a.dir/mfx_SIZEOF_DOUBLE.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4832a.dir/mfx_SIZEOF_DOUBLE.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_DOUBLE.c
+Linking C executable cmTC_4832a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4832a.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_4832a.dir/mfx_SIZEOF_DOUBLE.c.o -o cmTC_4832a 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of long double passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e9736/fast && /usr/bin/make  -f CMakeFiles/cmTC_e9736.dir/build.make CMakeFiles/cmTC_e9736.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e9736.dir/mfx_SIZEOF_LONG_DOUBLE.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e9736.dir/mfx_SIZEOF_LONG_DOUBLE.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_LONG_DOUBLE.c
+Linking C executable cmTC_e9736
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9736.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_e9736.dir/mfx_SIZEOF_LONG_DOUBLE.c.o -o cmTC_e9736 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of dev_t passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_10a44/fast && /usr/bin/make  -f CMakeFiles/cmTC_10a44.dir/build.make CMakeFiles/cmTC_10a44.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_10a44.dir/mfx_SIZEOF_DEV_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_10a44.dir/mfx_SIZEOF_DEV_T.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_DEV_T.c
+Linking C executable cmTC_10a44
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10a44.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_10a44.dir/mfx_SIZEOF_DEV_T.c.o -o cmTC_10a44 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of mode_t passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c3902/fast && /usr/bin/make  -f CMakeFiles/cmTC_c3902.dir/build.make CMakeFiles/cmTC_c3902.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c3902.dir/mfx_SIZEOF_MODE_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c3902.dir/mfx_SIZEOF_MODE_T.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_MODE_T.c
+Linking C executable cmTC_c3902
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3902.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_c3902.dir/mfx_SIZEOF_MODE_T.c.o -o cmTC_c3902 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of off_t passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4a79f/fast && /usr/bin/make  -f CMakeFiles/cmTC_4a79f.dir/build.make CMakeFiles/cmTC_4a79f.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4a79f.dir/mfx_SIZEOF_OFF_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4a79f.dir/mfx_SIZEOF_OFF_T.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_OFF_T.c
+Linking C executable cmTC_4a79f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a79f.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_4a79f.dir/mfx_SIZEOF_OFF_T.c.o -o cmTC_4a79f 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e2e7e/fast && /usr/bin/make  -f CMakeFiles/cmTC_e2e7e.dir/build.make CMakeFiles/cmTC_e2e7e.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e2e7e.dir/mfx_SIZEOF_SSIZE_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e2e7e.dir/mfx_SIZEOF_SSIZE_T.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_SSIZE_T.c
+Linking C executable cmTC_e2e7e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2e7e.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_e2e7e.dir/mfx_SIZEOF_SSIZE_T.c.o -o cmTC_e2e7e 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining size of time_t passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8ece7/fast && /usr/bin/make  -f CMakeFiles/cmTC_8ece7.dir/build.make CMakeFiles/cmTC_8ece7.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8ece7.dir/mfx_SIZEOF_TIME_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8ece7.dir/mfx_SIZEOF_TIME_T.c.o -c /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CheckTypeSize/mfx_SIZEOF_TIME_T.c
+Linking C executable cmTC_8ece7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ece7.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_8ece7.dir/mfx_SIZEOF_TIME_T.c.o -o cmTC_8ece7 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function access exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_02948/fast && /usr/bin/make  -f CMakeFiles/cmTC_02948.dir/build.make CMakeFiles/cmTC_02948.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_02948.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=access -o CMakeFiles/cmTC_02948.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_02948
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02948.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=access -rdynamic CMakeFiles/cmTC_02948.dir/CheckFunctionExists.c.o -o cmTC_02948 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function atexit exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_62ed1/fast && /usr/bin/make  -f CMakeFiles/cmTC_62ed1.dir/build.make CMakeFiles/cmTC_62ed1.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_62ed1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=atexit -o CMakeFiles/cmTC_62ed1.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_62ed1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62ed1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=atexit -rdynamic CMakeFiles/cmTC_62ed1.dir/CheckFunctionExists.c.o -o cmTC_62ed1 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function atoi exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_20c6b/fast && /usr/bin/make  -f CMakeFiles/cmTC_20c6b.dir/build.make CMakeFiles/cmTC_20c6b.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_20c6b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=atoi -o CMakeFiles/cmTC_20c6b.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_20c6b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20c6b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=atoi -rdynamic CMakeFiles/cmTC_20c6b.dir/CheckFunctionExists.c.o -o cmTC_20c6b 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function atol exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b43b3/fast && /usr/bin/make  -f CMakeFiles/cmTC_b43b3.dir/build.make CMakeFiles/cmTC_b43b3.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b43b3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=atol -o CMakeFiles/cmTC_b43b3.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b43b3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b43b3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=atol -rdynamic CMakeFiles/cmTC_b43b3.dir/CheckFunctionExists.c.o -o cmTC_b43b3 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function chmod exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1999e/fast && /usr/bin/make  -f CMakeFiles/cmTC_1999e.dir/build.make CMakeFiles/cmTC_1999e.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1999e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=chmod -o CMakeFiles/cmTC_1999e.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1999e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1999e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=chmod -rdynamic CMakeFiles/cmTC_1999e.dir/CheckFunctionExists.c.o -o cmTC_1999e 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function chown exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7b330/fast && /usr/bin/make  -f CMakeFiles/cmTC_7b330.dir/build.make CMakeFiles/cmTC_7b330.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_7b330.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=chown -o CMakeFiles/cmTC_7b330.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7b330
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b330.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=chown -rdynamic CMakeFiles/cmTC_7b330.dir/CheckFunctionExists.c.o -o cmTC_7b330 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function clock_getcpuclockid exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_52ea6/fast && /usr/bin/make  -f CMakeFiles/cmTC_52ea6.dir/build.make CMakeFiles/cmTC_52ea6.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_52ea6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=clock_getcpuclockid -o CMakeFiles/cmTC_52ea6.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_52ea6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52ea6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=clock_getcpuclockid -rdynamic CMakeFiles/cmTC_52ea6.dir/CheckFunctionExists.c.o -o cmTC_52ea6 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function clock_getres exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_047a0/fast && /usr/bin/make  -f CMakeFiles/cmTC_047a0.dir/build.make CMakeFiles/cmTC_047a0.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_047a0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=clock_getres -o CMakeFiles/cmTC_047a0.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_047a0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_047a0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=clock_getres -rdynamic CMakeFiles/cmTC_047a0.dir/CheckFunctionExists.c.o -o cmTC_047a0 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function clock_gettime exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_33522/fast && /usr/bin/make  -f CMakeFiles/cmTC_33522.dir/build.make CMakeFiles/cmTC_33522.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_33522.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=clock_gettime -o CMakeFiles/cmTC_33522.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_33522
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33522.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=clock_gettime -rdynamic CMakeFiles/cmTC_33522.dir/CheckFunctionExists.c.o -o cmTC_33522 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function ctime exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7c39c/fast && /usr/bin/make  -f CMakeFiles/cmTC_7c39c.dir/build.make CMakeFiles/cmTC_7c39c.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_7c39c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=ctime -o CMakeFiles/cmTC_7c39c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7c39c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c39c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=ctime -rdynamic CMakeFiles/cmTC_7c39c.dir/CheckFunctionExists.c.o -o cmTC_7c39c 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function difftime exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5b586/fast && /usr/bin/make  -f CMakeFiles/cmTC_5b586.dir/build.make CMakeFiles/cmTC_5b586.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5b586.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=difftime -o CMakeFiles/cmTC_5b586.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5b586
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b586.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=difftime -rdynamic CMakeFiles/cmTC_5b586.dir/CheckFunctionExists.c.o -o cmTC_5b586 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function fstat exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a497f/fast && /usr/bin/make  -f CMakeFiles/cmTC_a497f.dir/build.make CMakeFiles/cmTC_a497f.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a497f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fstat -o CMakeFiles/cmTC_a497f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a497f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a497f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fstat -rdynamic CMakeFiles/cmTC_a497f.dir/CheckFunctionExists.c.o -o cmTC_a497f 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function getenv exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_72cfd/fast && /usr/bin/make  -f CMakeFiles/cmTC_72cfd.dir/build.make CMakeFiles/cmTC_72cfd.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_72cfd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getenv -o CMakeFiles/cmTC_72cfd.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_72cfd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72cfd.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getenv -rdynamic CMakeFiles/cmTC_72cfd.dir/CheckFunctionExists.c.o -o cmTC_72cfd 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function getpagesize exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5d12b/fast && /usr/bin/make  -f CMakeFiles/cmTC_5d12b.dir/build.make CMakeFiles/cmTC_5d12b.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5d12b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpagesize -o CMakeFiles/cmTC_5d12b.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5d12b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d12b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getpagesize -rdynamic CMakeFiles/cmTC_5d12b.dir/CheckFunctionExists.c.o -o cmTC_5d12b 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function getrusage exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4216d/fast && /usr/bin/make  -f CMakeFiles/cmTC_4216d.dir/build.make CMakeFiles/cmTC_4216d.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4216d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getrusage -o CMakeFiles/cmTC_4216d.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4216d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4216d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getrusage -rdynamic CMakeFiles/cmTC_4216d.dir/CheckFunctionExists.c.o -o cmTC_4216d 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function gettimeofday exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_07652/fast && /usr/bin/make  -f CMakeFiles/cmTC_07652.dir/build.make CMakeFiles/cmTC_07652.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_07652.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gettimeofday -o CMakeFiles/cmTC_07652.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_07652
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07652.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gettimeofday -rdynamic CMakeFiles/cmTC_07652.dir/CheckFunctionExists.c.o -o cmTC_07652 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function gmtime exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f6aa4/fast && /usr/bin/make  -f CMakeFiles/cmTC_f6aa4.dir/build.make CMakeFiles/cmTC_f6aa4.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f6aa4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gmtime -o CMakeFiles/cmTC_f6aa4.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f6aa4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6aa4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gmtime -rdynamic CMakeFiles/cmTC_f6aa4.dir/CheckFunctionExists.c.o -o cmTC_f6aa4 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function isatty exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_50104/fast && /usr/bin/make  -f CMakeFiles/cmTC_50104.dir/build.make CMakeFiles/cmTC_50104.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_50104.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isatty -o CMakeFiles/cmTC_50104.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_50104
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50104.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=isatty -rdynamic CMakeFiles/cmTC_50104.dir/CheckFunctionExists.c.o -o cmTC_50104 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function localtime exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d8619/fast && /usr/bin/make  -f CMakeFiles/cmTC_d8619.dir/build.make CMakeFiles/cmTC_d8619.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d8619.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=localtime -o CMakeFiles/cmTC_d8619.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d8619
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8619.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=localtime -rdynamic CMakeFiles/cmTC_d8619.dir/CheckFunctionExists.c.o -o cmTC_d8619 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function longjmp exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e37c7/fast && /usr/bin/make  -f CMakeFiles/cmTC_e37c7.dir/build.make CMakeFiles/cmTC_e37c7.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e37c7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=longjmp -o CMakeFiles/cmTC_e37c7.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e37c7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e37c7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=longjmp -rdynamic CMakeFiles/cmTC_e37c7.dir/CheckFunctionExists.c.o -o cmTC_e37c7 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function lstat exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e1b7d/fast && /usr/bin/make  -f CMakeFiles/cmTC_e1b7d.dir/build.make CMakeFiles/cmTC_e1b7d.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e1b7d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lstat -o CMakeFiles/cmTC_e1b7d.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e1b7d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1b7d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lstat -rdynamic CMakeFiles/cmTC_e1b7d.dir/CheckFunctionExists.c.o -o cmTC_e1b7d 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function memcmp exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ac2eb/fast && /usr/bin/make  -f CMakeFiles/cmTC_ac2eb.dir/build.make CMakeFiles/cmTC_ac2eb.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_ac2eb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memcmp -o CMakeFiles/cmTC_ac2eb.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘memcmp’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_ac2eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac2eb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memcmp -rdynamic CMakeFiles/cmTC_ac2eb.dir/CheckFunctionExists.c.o -o cmTC_ac2eb 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function memcpy exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_90121/fast && /usr/bin/make  -f CMakeFiles/cmTC_90121.dir/build.make CMakeFiles/cmTC_90121.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_90121.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memcpy -o CMakeFiles/cmTC_90121.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘memcpy’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_90121
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90121.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memcpy -rdynamic CMakeFiles/cmTC_90121.dir/CheckFunctionExists.c.o -o cmTC_90121 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function memmove exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_392c5/fast && /usr/bin/make  -f CMakeFiles/cmTC_392c5.dir/build.make CMakeFiles/cmTC_392c5.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_392c5.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memmove -o CMakeFiles/cmTC_392c5.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘memmove’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_392c5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_392c5.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memmove -rdynamic CMakeFiles/cmTC_392c5.dir/CheckFunctionExists.c.o -o cmTC_392c5 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function memset exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3ccea/fast && /usr/bin/make  -f CMakeFiles/cmTC_3ccea.dir/build.make CMakeFiles/cmTC_3ccea.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3ccea.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memset -o CMakeFiles/cmTC_3ccea.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘memset’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_3ccea
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ccea.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memset -rdynamic CMakeFiles/cmTC_3ccea.dir/CheckFunctionExists.c.o -o cmTC_3ccea 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function mkdir exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_28a11/fast && /usr/bin/make  -f CMakeFiles/cmTC_28a11.dir/build.make CMakeFiles/cmTC_28a11.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_28a11.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mkdir -o CMakeFiles/cmTC_28a11.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_28a11
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28a11.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mkdir -rdynamic CMakeFiles/cmTC_28a11.dir/CheckFunctionExists.c.o -o cmTC_28a11 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function mktime exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e29ae/fast && /usr/bin/make  -f CMakeFiles/cmTC_e29ae.dir/build.make CMakeFiles/cmTC_e29ae.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e29ae.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mktime -o CMakeFiles/cmTC_e29ae.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e29ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e29ae.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mktime -rdynamic CMakeFiles/cmTC_e29ae.dir/CheckFunctionExists.c.o -o cmTC_e29ae 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function mmap exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_77983/fast && /usr/bin/make  -f CMakeFiles/cmTC_77983.dir/build.make CMakeFiles/cmTC_77983.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_77983.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mmap -o CMakeFiles/cmTC_77983.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_77983
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77983.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mmap -rdynamic CMakeFiles/cmTC_77983.dir/CheckFunctionExists.c.o -o cmTC_77983 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function mprotect exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dc4ef/fast && /usr/bin/make  -f CMakeFiles/cmTC_dc4ef.dir/build.make CMakeFiles/cmTC_dc4ef.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_dc4ef.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mprotect -o CMakeFiles/cmTC_dc4ef.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dc4ef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc4ef.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mprotect -rdynamic CMakeFiles/cmTC_dc4ef.dir/CheckFunctionExists.c.o -o cmTC_dc4ef 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function munmap exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_52e6b/fast && /usr/bin/make  -f CMakeFiles/cmTC_52e6b.dir/build.make CMakeFiles/cmTC_52e6b.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_52e6b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=munmap -o CMakeFiles/cmTC_52e6b.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_52e6b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52e6b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=munmap -rdynamic CMakeFiles/cmTC_52e6b.dir/CheckFunctionExists.c.o -o cmTC_52e6b 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function qsort exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fabad/fast && /usr/bin/make  -f CMakeFiles/cmTC_fabad.dir/build.make CMakeFiles/cmTC_fabad.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_fabad.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=qsort -o CMakeFiles/cmTC_fabad.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fabad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fabad.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=qsort -rdynamic CMakeFiles/cmTC_fabad.dir/CheckFunctionExists.c.o -o cmTC_fabad 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function raise exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0d679/fast && /usr/bin/make  -f CMakeFiles/cmTC_0d679.dir/build.make CMakeFiles/cmTC_0d679.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0d679.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=raise -o CMakeFiles/cmTC_0d679.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0d679
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d679.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=raise -rdynamic CMakeFiles/cmTC_0d679.dir/CheckFunctionExists.c.o -o cmTC_0d679 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function rmdir exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2ac39/fast && /usr/bin/make  -f CMakeFiles/cmTC_2ac39.dir/build.make CMakeFiles/cmTC_2ac39.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_2ac39.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=rmdir -o CMakeFiles/cmTC_2ac39.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2ac39
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ac39.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=rmdir -rdynamic CMakeFiles/cmTC_2ac39.dir/CheckFunctionExists.c.o -o cmTC_2ac39 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function setjmp exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0bd9a/fast && /usr/bin/make  -f CMakeFiles/cmTC_0bd9a.dir/build.make CMakeFiles/cmTC_0bd9a.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0bd9a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setjmp -o CMakeFiles/cmTC_0bd9a.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0bd9a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bd9a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=setjmp -rdynamic CMakeFiles/cmTC_0bd9a.dir/CheckFunctionExists.c.o -o cmTC_0bd9a 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function signal exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d7313/fast && /usr/bin/make  -f CMakeFiles/cmTC_d7313.dir/build.make CMakeFiles/cmTC_d7313.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d7313.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=signal -o CMakeFiles/cmTC_d7313.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d7313
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7313.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=signal -rdynamic CMakeFiles/cmTC_d7313.dir/CheckFunctionExists.c.o -o cmTC_d7313 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function snprintf exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_34241/fast && /usr/bin/make  -f CMakeFiles/cmTC_34241.dir/build.make CMakeFiles/cmTC_34241.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_34241.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=snprintf -o CMakeFiles/cmTC_34241.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘snprintf’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_34241
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34241.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=snprintf -rdynamic CMakeFiles/cmTC_34241.dir/CheckFunctionExists.c.o -o cmTC_34241 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function strcasecmp exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aaaa0/fast && /usr/bin/make  -f CMakeFiles/cmTC_aaaa0.dir/build.make CMakeFiles/cmTC_aaaa0.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_aaaa0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strcasecmp -o CMakeFiles/cmTC_aaaa0.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘strcasecmp’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_aaaa0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aaaa0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strcasecmp -rdynamic CMakeFiles/cmTC_aaaa0.dir/CheckFunctionExists.c.o -o cmTC_aaaa0 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function strchr exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8c57a/fast && /usr/bin/make  -f CMakeFiles/cmTC_8c57a.dir/build.make CMakeFiles/cmTC_8c57a.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8c57a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strchr -o CMakeFiles/cmTC_8c57a.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘strchr’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_8c57a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c57a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strchr -rdynamic CMakeFiles/cmTC_8c57a.dir/CheckFunctionExists.c.o -o cmTC_8c57a 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function strdup exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d762f/fast && /usr/bin/make  -f CMakeFiles/cmTC_d762f.dir/build.make CMakeFiles/cmTC_d762f.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d762f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strdup -o CMakeFiles/cmTC_d762f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘strdup’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_d762f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d762f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strdup -rdynamic CMakeFiles/cmTC_d762f.dir/CheckFunctionExists.c.o -o cmTC_d762f 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function strerror exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3963b/fast && /usr/bin/make  -f CMakeFiles/cmTC_3963b.dir/build.make CMakeFiles/cmTC_3963b.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3963b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strerror -o CMakeFiles/cmTC_3963b.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3963b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3963b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strerror -rdynamic CMakeFiles/cmTC_3963b.dir/CheckFunctionExists.c.o -o cmTC_3963b 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function strftime exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_51df4/fast && /usr/bin/make  -f CMakeFiles/cmTC_51df4.dir/build.make CMakeFiles/cmTC_51df4.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_51df4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strftime -o CMakeFiles/cmTC_51df4.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘strftime’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_51df4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51df4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strftime -rdynamic CMakeFiles/cmTC_51df4.dir/CheckFunctionExists.c.o -o cmTC_51df4 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function strncasecmp exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_af9de/fast && /usr/bin/make  -f CMakeFiles/cmTC_af9de.dir/build.make CMakeFiles/cmTC_af9de.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_af9de.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strncasecmp -o CMakeFiles/cmTC_af9de.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘strncasecmp’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_af9de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af9de.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strncasecmp -rdynamic CMakeFiles/cmTC_af9de.dir/CheckFunctionExists.c.o -o cmTC_af9de 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function strrchr exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f4b8b/fast && /usr/bin/make  -f CMakeFiles/cmTC_f4b8b.dir/build.make CMakeFiles/cmTC_f4b8b.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f4b8b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strrchr -o CMakeFiles/cmTC_f4b8b.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘strrchr’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_f4b8b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4b8b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strrchr -rdynamic CMakeFiles/cmTC_f4b8b.dir/CheckFunctionExists.c.o -o cmTC_f4b8b 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function strstr exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_808ee/fast && /usr/bin/make  -f CMakeFiles/cmTC_808ee.dir/build.make CMakeFiles/cmTC_808ee.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_808ee.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strstr -o CMakeFiles/cmTC_808ee.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘strstr’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_808ee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_808ee.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strstr -rdynamic CMakeFiles/cmTC_808ee.dir/CheckFunctionExists.c.o -o cmTC_808ee 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function time exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4e377/fast && /usr/bin/make  -f CMakeFiles/cmTC_4e377.dir/build.make CMakeFiles/cmTC_4e377.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4e377.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=time -o CMakeFiles/cmTC_4e377.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4e377
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e377.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=time -rdynamic CMakeFiles/cmTC_4e377.dir/CheckFunctionExists.c.o -o cmTC_4e377 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function umask exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3abac/fast && /usr/bin/make  -f CMakeFiles/cmTC_3abac.dir/build.make CMakeFiles/cmTC_3abac.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3abac.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=umask -o CMakeFiles/cmTC_3abac.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3abac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3abac.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=umask -rdynamic CMakeFiles/cmTC_3abac.dir/CheckFunctionExists.c.o -o cmTC_3abac 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function utime exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_61082/fast && /usr/bin/make  -f CMakeFiles/cmTC_61082.dir/build.make CMakeFiles/cmTC_61082.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_61082.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=utime -o CMakeFiles/cmTC_61082.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_61082
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61082.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=utime -rdynamic CMakeFiles/cmTC_61082.dir/CheckFunctionExists.c.o -o cmTC_61082 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
+Determining if the function vsnprintf exists passed with the following output:
+Change Dir: /home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_31c48/fast && /usr/bin/make  -f CMakeFiles/cmTC_31c48.dir/build.make CMakeFiles/cmTC_31c48.dir/build
+make[1]: 进入目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_31c48.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=vsnprintf -o CMakeFiles/cmTC_31c48.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘vsnprintf’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_31c48
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31c48.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=vsnprintf -rdynamic CMakeFiles/cmTC_31c48.dir/CheckFunctionExists.c.o -o cmTC_31c48 
+make[1]: 离开目录“/home/hammer/Desktop/pythonProjects/pytech/lzo-2.10/build/CMakeFiles/CMakeTmp”
+
+
+
