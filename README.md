@@ -1,8 +1,9 @@
-### 安装包
-pip install xlrd==1.2.0
-pip3 install  python-lzo
-sudo apt-get install python-lzo zlib1g-dev unzip
-
+### 安装依赖
+>pip install xlrd==1.2.0
+>pip3 install  python-lzo
+~~sudo apt-get install python-lzo zlib1g-dev unzip~~
+安装whl包，可以理解位编译之后的安装包 https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-lzo
+>pip install python_lzo-1.14-cp310-cp310-win_amd64.whl
 
 ### 依赖管理方案一
 
