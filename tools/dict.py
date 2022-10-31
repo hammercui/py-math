@@ -52,7 +52,7 @@ def query_dic(headwords, items, queryWord: str, ignore_line_start=0, ignore_line
 if __name__ == '__main__':
     try:
         # 1小词典
-        headwords, items = load_dic_content('/The Little Dict big')
+        headwords, items = load_dic_content('/The Little Dict big/TLD.mdx')
         query_dic(headwords, items, "can")
     except Exception as e:
         print(f'err: {e}')
