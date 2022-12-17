@@ -4,7 +4,7 @@ words_file = '200dic.txt'
 # step1 
 # 本机词典库根目录
 root_path = "/home/hammer/Documents/词典词库"
-
+root_path = "F:\\DicRes"
 
 def load_dic_content(dic_name):
     """
@@ -25,14 +25,34 @@ def load_dic_content(dic_name):
     return headwords, items
 
 
+def assemble_mk(word, *args):
+    _mk_template = f"""#dic
+    **{word}**
+    ?
+    ***
+    {args[0]}
+    ***
+    ![](https://ssl.gstatic.com/dictionary/static/sounds/oxford/{word}--_gb_1.mp3#play&loop)"""
+    return _mk_template
+
+
 def query_dic(headwords, items, queryWord: str, ignore_line_start=0, ignore_line_end=0):
-    # 查词，返回单词和html文件
+    """
+    查词，返回单词和markdown文件
+    :param headwords:
+    :param items:
+    :param queryWord:
+    :param ignore_line_start:
+    :param ignore_line_end:
+    :return:
+    """
     try:
         wordIndex = headwords.index(queryWord.encode())
         word, html = items[wordIndex]
         word, html = word.decode(), html.decode()
         print(f'word {word}')
         print(f'html {html}')
+        # todo html转markdown
         # markdown = html2text.html2text(html)
         # lines = markdown.splitlines()
         # res = ''
@@ -52,7 +72,8 @@ def query_dic(headwords, items, queryWord: str, ignore_line_start=0, ignore_line
 if __name__ == '__main__':
     try:
         # 1小词典
-        headwords, items = load_dic_content('/The Little Dict big/TLD.mdx')
+        # headwords, items = load_dic_content('/The Little Dict big/TLD.mdx')
+        headwords, items = load_dic_content('\\TheLittleDictbig/TLD.mdx')
         query_dic(headwords, items, "can")
     except Exception as e:
         print(f'err: {e}')
