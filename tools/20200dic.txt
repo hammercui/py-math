@@ -3374,7 +3374,6 @@ temple
 medium
 outdoor
 suck
-and/or
 broadcast
 leap
 random
@@ -11895,7 +11894,6 @@ clear-cut
 sill
 deterrence
 limp
-his/her
 trolley
 rarity
 biomedical
@@ -15613,7 +15611,6 @@ acoustic
 cursory
 severed
 resell
-he/she
 appendage
 intermittently
 flush
