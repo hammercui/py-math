@@ -2,3 +2,4 @@
 /lzo-2.10/
 .idea
 tools/output/*
+__pycache__
