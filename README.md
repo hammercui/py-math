@@ -38,8 +38,9 @@ pipenv install flask
 
 ### 依赖管理方案三
 
-使用poetry 
+使用poetry
 安装命令
+
 ```
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
@@ -49,3 +50,5 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 2. 已有的项目新增poetry的支持
    poetry init
 3. poetry add : 安装命令
+4. poetry run python3 xxx.python: 使用poetry的虚拟环境
+   更多poetry使用，参见[poetry使用手册](./doc/poetry使用手册.md)
