@@ -7,7 +7,7 @@ words_file = '200dic.txt'
 # step1 
 # 本机词典库根目录
 root_path = "/home/hammer/Documents/词典词库"
-root_path = "F:\\DicRes"
+root_path = "D:\\DicRes"
 
 def load_dic_content(dic_name):
     """
@@ -71,7 +71,7 @@ if __name__ == '__main__':
         # headwords, items = load_dic_content('/The Little Dict big/TLD.mdx')
         headwords, items = load_dic_content('\\TheLittleDictbig/TLD.mdx')
         # 2加载词源
-        _input_path = _output+'/20200dic.txt'
+        _input_path = _output+'/2023核心词.txt'
         with open(_input_path, "r", encoding="utf-8") as inp_txt:
             for line in inp_txt.readlines():
                 line = line.strip('\n')
