@@ -100,3 +100,8 @@ poetry env remove python3.7
 
 需要找到poetry env info的具体python路径，
 
+### 6 安装新的依赖
+```
+poetry add request
+```
+
