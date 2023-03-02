@@ -134,7 +134,7 @@ case $maybe_os in
     ;;
 esac
 
-### Let's recognize common machines as not being operating systems so
+### Let's recognize core machines as not being operating systems so
 ### that things like config.sub decstation-3100 work.  We also
 ### recognize some manufacturers as not being operating systems, so we
 ### can provide default operating systems below.
@@ -1558,7 +1558,7 @@ esac
 else
 
 # Here we handle the default operating systems that come with various machines.
-# The value should be what the vendor currently ships out the door with their
+# The value should be what the src currently ships out the door with their
 # machine or put another way, the most popular os provided with the machine.
 
 # Note that if you're going to try to match "-MANUFACTURER" here (say,

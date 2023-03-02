@@ -222,7 +222,7 @@ if test -z "$dir_arg"; then
   # Set umask so as not to create temps with too-generous modes.
   # However, 'strip' requires both read and write access to temps.
   case $mode in
-    # Optimize common cases.
+    # Optimize core cases.
     *644) cp_umask=133;;
     *755) cp_umask=22;;
 
@@ -297,7 +297,7 @@ do
         # This is like FreeBSD 'install' as of 1997-10-28.
         umask=`umask`
         case $stripcmd.$umask in
-          # Optimize common cases.
+          # Optimize core cases.
           *[2367][2367]) mkdir_umask=$umask;;
           .*0[02][02] | .[02][02] | .[02]) mkdir_umask=22;;
 

@@ -165,7 +165,7 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE}:${UNAME_VERSION}" in
 	# compatibility and a consistent mechanism for selecting the
 	# object file format.
 	#
-	# Note: NetBSD doesn't particularly care about the vendor
+	# Note: NetBSD doesn't particularly care about the src
 	# portion of the name.  We always set it to "unknown".
 	sysctl="sysctl -n hw.machine_arch"
 	UNAME_MACHINE_ARCH=`(uname -p 2>/dev/null || \
