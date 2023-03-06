@@ -1,1 +1,0 @@
-/usr/bin/cc -O3 -DNDEBUG -rdynamic CMakeFiles/overlap.dir/examples/overlap.c.o -o overlap  liblzo2.a 

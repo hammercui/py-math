@@ -47,7 +47,6 @@ if __name__ == '__main__':
     # 不加载图片, 提升速度
     chrome_options.add_argument('blink-settings=imagesEnabled=false')
     # chrome_options.add_argument("--disable-dev-shm-usage")
-    # 添加v2ray代理
     # chrome_options.add_argument("--proxy-server=http://127.0.0.1:10809") # 设置代理，请求头等，以列表的形式传入多个参数
     # seleniumwire 配置二级代理
     wire_option = {

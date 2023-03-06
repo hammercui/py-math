@@ -1,1 +1,0 @@
-/usr/bin/cc -O3 -DNDEBUG -rdynamic CMakeFiles/dict.dir/examples/dict.c.o -o dict  liblzo2.a 

@@ -1,1 +1,0 @@
-/usr/bin/cc -O3 -DNDEBUG -rdynamic CMakeFiles/simple.dir/examples/simple.c.o -o simple  liblzo2.a 

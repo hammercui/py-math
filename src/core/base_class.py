@@ -80,7 +80,7 @@ class Core(Singleton):
     def tools(self):
         return self.__tools
 
-    def get_mysql(self, db="metabus", force_db=False):
+    def get_mysql(self, db="test", force_db=False):
         if db in self.__mysql_dict:
             return self.__mysql_dict[db]
         mysql = MySql(env=self.env, db=db, force_db=force_db)
