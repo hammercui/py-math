@@ -3,9 +3,9 @@ import re
 
 
 def rename(file_name, path):
-    result = re.match("^\d{1,}", file_name, re.I | re.M)
+    result = re.match(r"^\d+", file_name, re.I | re.M)
     if result is not None:
-        new_file_name = re.sub("^\d{1,}", "", file_name, count=0, flags=0)
+        new_file_name = re.sub(r"^\d+", "", file_name, count=0, flags=0)
         new_file_name = new_file_name.replace(' ', '')
         # print("new_file_name",new_file_name)
         old_full_path = os.path.join(path, file_name)
