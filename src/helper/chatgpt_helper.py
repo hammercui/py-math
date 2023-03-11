@@ -5,7 +5,7 @@ from key=accessToken,other is useless!
 """
 
 from revChatGPT.V1 import Chatbot
-from helper.access_const import chatgpt_token
+from helper.access_helper import chatgpt_token
 
 chatbot = None
 access_token = chatgpt_token()
