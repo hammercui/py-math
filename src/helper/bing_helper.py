@@ -4,7 +4,7 @@ import os
 import asyncio
 from EdgeGPT import Chatbot
 
-from helper.access_helper import bing_cookies
+# from helper.access_helper import bing_cookies
 
 chatbot = None
 

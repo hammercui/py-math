@@ -6,3 +6,4 @@ dictionary/output/*
 __pycache__
 /log/
 /output/*
+poetry.lock
