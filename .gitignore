@@ -5,3 +5,4 @@ src/helper/access_helper.py
 dictionary/output/*
 __pycache__
 /log/
+/output/*

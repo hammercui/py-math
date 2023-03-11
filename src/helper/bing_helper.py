@@ -1,18 +1,22 @@
 # https://github.com/acheong08/EdgeGPT
-
+import json
 import os
 import asyncio
 from EdgeGPT import Chatbot
 
+from helper.access_helper import bing_cookies
+
 chatbot = None
 
+# cookies = json.loads(bing_cookies())
 
 async def ask_bing():
     global chatbot
     if chatbot is None:
         print("--------------------------------- create new chatbot ---------------------------------")
         cur_file_path = os.path.dirname(os.path.realpath(__file__))
-        chatbot = Chatbot(cookiePath=cur_file_path + '/cookie.json')
+        chatbot = Chatbot(cookiePath=cur_file_path + '/access_cookie.json')
+        # chatbot = Chatbot(cookies=cookies)
 
     while True:
         question = input(">> ")

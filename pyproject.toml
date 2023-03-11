@@ -23,10 +23,11 @@ regex = "^2022.10.31"
 pyecharts = "^2.0.1"
 openai = "^0.26.5"
 revchatgpt = "^3.3.2"
-edgegpt = "^0.0.48"
+edgegpt = "^0.0.55"
 hexbytes = "^0.3.0"
 matplotlib = "^3.7.1"
 numpy = "^1.24.2"
+pymupdf = "1.19.0"
 
 
 

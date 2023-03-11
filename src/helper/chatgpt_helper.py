@@ -15,6 +15,7 @@ def get_chatgpt_answer():
     global chatbot
     if chatbot is None:
         print("--------------------------------- create new chatgpt ---------------------------------")
+        # set proxy config={"proxy": "...",}
         chatbot = Chatbot(config={"access_token": access_token})
 
     question = input(">> ")
