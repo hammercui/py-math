@@ -1,11 +1,17 @@
 # https://github.com/acheong08/ChatGPT
-from core.base_class import Core
-from common.lib.revchatgpt.V1 import Chatbot
+"""
+get accessToken from  https://chat.openai.com/api/auth/session:
+from key=accessToken,other is useless!
+"""
+
+from revChatGPT.V1 import Chatbot
+from helper.access_const import chatgpt_token
 
 chatbot = None
+access_token = chatgpt_token()
 
 
-def get_chatgpt_answer(access_token):
+def get_chatgpt_answer():
     global chatbot
     if chatbot is None:
         print("--------------------------------- create new chatgpt ---------------------------------")
@@ -22,18 +28,9 @@ def get_chatgpt_answer(access_token):
         prev_text = data["message"]
     print("\n")
 
-    get_chatgpt_answer(access_token)
+    get_chatgpt_answer()
 
 
 if __name__ == '__main__':
-    env = "dev"
-    core = Core()
-    core.init(env=env)
-
-    logger = core.logger
-    config = core.config
-    logger.info('********************************* Chat GPT Init *********************************')
-
-    # https://chat.openai.com/api/auth/session
-    access_token = ""
-    get_chatgpt_answer(access_token)
+    print('********************************* Chat GPT Init *********************************')
+    get_chatgpt_answer()
