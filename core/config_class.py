@@ -9,15 +9,11 @@ ENV_PROD = "prod"
 
 
 class LoadConfig(Singleton):
-    def __init__(self):
-        self.env_config = None
-        self.config_path = None
-
     @staticmethod
     def instance():
         return LoadConfig()
 
-    def init(self, env, path_real2config="/config"):
+    def init(self, env, path_real2config="/configs"):
         """ 读取配置文件的类.
             env: config 环境
             path_real2config: config_class.py的相对路径 (这样设计是因为 config_class.py 的项目位置是固定的)
@@ -25,9 +21,10 @@ class LoadConfig(Singleton):
         self.env_config = Env()
         root_path = ""
         if env == ENV_LOCAL or env == ENV_DEV:
-            root_path = os.path.dirname(__file__) + "/../.." + path_real2config
+            root_path = os.path.dirname(__file__) + "/.." + path_real2config
         else:
-            root_path = os.getcwd() + path_real2config
+            # root_path = os.getcwd() + path_real2config
+            root_path = os.path.dirname(__file__) + "/.." + path_real2config
         self.config_path = root_path
         common_path = root_path + '/.env'
         env_path = root_path + '/.env' + '.' + env

@@ -9,6 +9,10 @@ import requests
 import traceback
 from inspect import getframeinfo, stack
 from logging.handlers import TimedRotatingFileHandler, RotatingFileHandler
+
+# cur_abs_path = os.path.dirname(os.path.abspath(__file__))
+# if cur_abs_path not in sys.path:
+#     sys.path.append(cur_abs_path)
 from core.singleton_class import Singleton
 from core.time_class import Time
 from core.config_class import LoadConfig, ENV_LOCAL, ENV_DEV
@@ -73,7 +77,8 @@ class Logger(Singleton):
         log_path = ""
         if env == ENV_LOCAL or env == ENV_DEV:
             cur_file_path = os.path.dirname(os.path.realpath(__file__))
-            log_path = f"{cur_file_path}/../..{path}"
+            # log_path = f"{cur_file_path}/../..{path}"
+            log_path = f"{cur_file_path}/..{path}"
         else:
             log_path = f"{os.getcwd()}/{path}"
         logname = f"{log_path}/{log_name}.log"  # 指定输出的日志文件名
@@ -143,7 +148,7 @@ class Logger(Singleton):
         self.logger.error(log_prefix + str(msg) + '\ntrackback: ' + traceback.format_exc())
 
         if send_dingtalk:
-            token = LoadConfig.instance().get("DINGTALK_ONITOR")
+            token = LoadConfig.instance().get("DINGTALK_METABUS_MONITOR")
             self.send2dingtalk(str(msg), access_token=token, filename=filename, lineno=caller.lineno)
 
     def send2dingtalk(self, msg, access_token, key_word='[Monitor]', at=None, filename=None, lineno=None, detail=False):

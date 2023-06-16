@@ -1,9 +1,15 @@
+import sys
+import os
 import base64
 import random
 from Crypto.Cipher import AES
 from Crypto import Random
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_v1_5
+
+# cur_abs_path = os.path.dirname(os.path.abspath(__file__))
+# if cur_abs_path not in sys.path:
+#     sys.path.append(cur_abs_path)
 from core.config_class import LoadConfig
 from core.singleton_class import Singleton
 
@@ -11,10 +17,10 @@ from core.singleton_class import Singleton
 class Crypto(Singleton):
     def __init__(self):
         self.config = LoadConfig.instance()
-        # self.aes_key = self.config.get("SECURITY_CRY_KEY")
-        # self.aes_iv = self.config.get("SECURITY_CRY_IV")
-        # self.rsa_public_key = self.config.get("SECURITY_RSA_PUBLIC_KEY")
-        # self.rsa_private_key = self.config.get("SECURITY_RSA_PRIVATE_KEY")
+        self.aes_key = self.config.get("SECURITY_CRY_KEY")
+        self.aes_iv = self.config.get("SECURITY_CRY_IV")
+        self.rsa_public_key = self.config.get("SECURITY_RSA_PUBLIC_KEY")
+        self.rsa_private_key = self.config.get("SECURITY_RSA_PRIVATE_KEY")
         print(f"Crypto >>>\t initiated")
 
     @staticmethod
@@ -48,13 +54,13 @@ class Crypto(Singleton):
         encrypt_text = str(base64.b64encode(encrypt_bytes), encoding="utf-8")  # 使用Base64进行编码,返回byte字符串, 再转为 utf-8 字符串
         return encrypt_text
 
-    def decrypt_aes(self, text_encrypted_base64: str):
+    def decrypt_aes(self, text_encrypted_base64: str, p_key=None, p_iv=None):
         """
         AES.MODE_CBC 解密 CBC模式
         密钥（key）, 密斯偏移量（iv）
         """
-        key = bytes(self.aes_key, encoding="utf-8")
-        iv = bytes(self.aes_iv, encoding="utf8")
+        key = bytes(p_key, encoding="utf-8") if p_key is not None else bytes(self.aes_key, encoding="utf-8")
+        iv = bytes(p_iv, encoding="utf8") if p_iv is not None else bytes(self.aes_iv, encoding="utf8")
 
         cipher = AES.new(key, AES.MODE_CBC, iv)
         text_encrypted_base64 = base64.b64decode(text_encrypted_base64)
@@ -111,6 +117,7 @@ class Crypto(Singleton):
 
     @staticmethod
     def base642str(str_base64):
-        str_byte = base64.b64decode(str_base64 + '==')  # https://stackoverflow.com/questions/2941995/python-ignore-incorrect-padding-error-when-base64-decoding
+        str_byte = base64.b64decode(
+            str_base64 + '==')  # https://stackoverflow.com/questions/2941995/python-ignore-incorrect-padding-error-when-base64-decoding
         str_msg = str_byte.decode('utf-8')
         return str_msg

@@ -1,0 +1,1 @@
+nohup python3 launch.py > launch.log 2>&1 &

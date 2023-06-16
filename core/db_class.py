@@ -4,13 +4,14 @@ import sys
 import json
 import pymysql
 import redis
+from kafka.admin import NewPartitions
 from pymongo.errors import CollectionInvalid
 from pymongo.errors import ConnectionFailure
 from pymongo.errors import PyMongoError
 from pymongo.mongo_client import MongoClient
 from pymongo.collection import Collection
 from redis.sentinel import Sentinel
-from kafka import KafkaProducer, KafkaConsumer
+from kafka import KafkaProducer, KafkaConsumer, KafkaAdminClient, KafkaClient
 
 # cur_abs_path = os.path.dirname(os.path.abspath(__file__))
 # if cur_abs_path not in sys.path:
@@ -92,22 +93,66 @@ class MySql:
 
 class Redis:
     def __init__(self, db=0, env='local'):
+        self.slave = None
+        self.master = None
         config = LoadConfig.instance()
         hosts = config.list("REDIS_HOSTS")
-        if env == 'prod' or env == 'beta':
-            # 连接哨兵服务器(主机名也可以用域名)
-            sentinel = Sentinel([(hosts[0], 27000), (hosts[1], 27000), (hosts[2], 27000)], socket_timeout=3)
-            self.master = sentinel.master_for('mymaster', socket_timeout=3, db=db, decode_responses=True)
-            self.slave = sentinel.slave_for('mymaster', socket_timeout=3, db=db, decode_responses=True)
-        else:
-            password = config.str("REDIS_PASSWORD")
-            if env == 'dev':
-                self.master = redis.Redis(host=hosts[0], port=6379, decode_responses=True, db=db, password=password)
-                self.slave = redis.Redis(host=hosts[0], port=6379, decode_responses=True, db=db, password=password)
-            elif env == 'local':
-                self.master = redis.Redis(host=hosts[0], port=6379, decode_responses=True, db=db, password=password)
-                self.slave = redis.Redis(host=hosts[0], port=6379, decode_responses=True, db=db, password=password)
+        password = config.str("REDIS_PASSWORD")
+        self.__hosts = hosts
+        self.__password = password
+        self.__db = db
+        self.__env = env
+        self.connect()
+        # stable diffusion 特殊处理
+        # if env == 'prod' or env == 'beta' or env == 'test':
+        #     # 连接哨兵服务器(主机名也可以用域名)
+        #     sentinel = Sentinel([(hosts[0], 27000), (hosts[1], 27000), (hosts[2], 27000)], socket_timeout=3)
+        #     self.master = sentinel.master_for('mymaster', socket_timeout=3, db=db, decode_responses=True)
+        #     self.slave = sentinel.slave_for('mymaster', socket_timeout=3, db=db, decode_responses=True)
+        #     try:
+        #         self.master.get("redis_info")
+        #     except Exception as e:
+        #         # 失败使用直连的方式
+        #         self.master = redis.Redis(host=hosts[0], port=6379, decode_responses=True, db=db, password=password)
+        #         self.slave = redis.Redis(host=hosts[0], port=6379, decode_responses=True, db=db, password=password)
+        # else:
+        #     if env in 'dev':
+        #         self.master = redis.Redis(host=hosts[0], port=6379, decode_responses=True, db=db, password=password)
+        #         self.slave = redis.Redis(host=hosts[0], port=6379, decode_responses=True, db=db, password=password)
+        #     elif env == 'local':
+        #         self.master = redis.Redis(host=hosts[0], port=6379, decode_responses=True, db=db, password=password)
+        #         self.slave = redis.Redis(host=hosts[0], port=6379, decode_responses=True, db=db, password=password)
         print(f"Redis >>>\t create with env:{env} database:{db}")
+
+    def connect(self):
+        if self.__env in ['local', 'dev', 'test', 'beta', 'prod']:
+            self.connect_direct()
+
+    def connect_sentinel(self):
+        # 连接哨兵服务器(主机名也可以用域名)
+        sentinel = Sentinel([(self.__hosts[0], 27000), (self.__hosts[1], 27000), (self.__hosts[2], 27000)],
+                            socket_timeout=3)
+        self.master = sentinel.master_for('mymaster', socket_timeout=3, db=self.__db, decode_responses=True)
+        self.slave = sentinel.slave_for('mymaster', socket_timeout=3, db=self.__db, decode_responses=True)
+        print(f"Redis >>>\t sentinel connect success!")
+
+    def connect_direct(self):
+        for host in self.__hosts:
+            self.master = redis.Redis(host=host, port=6379, decode_responses=True, db=self.__db,
+                                      password=self.__password)
+            self.slave = redis.Redis(host=host, port=6379, decode_responses=True, db=self.__db,
+                                     password=self.__password)
+            if self.check_master():
+                print(f"Redis >>>\t direct connect host:{host} connect success!")
+                return
+
+    def check_master(self):
+        try:
+            self.master.set("ping", "pong")
+            return True
+        except Exception as e:
+            print(f"Redis >>>\t redis check error: {e}")
+            return False
 
     def set_str(self, key, text):
         self.master.set(key, text)
@@ -435,7 +480,10 @@ class Kafka:
     def __init__(self, env):
         config = LoadConfig.instance()
         self.__uri = config.get('KAFKA_URL')
-        self.__producer = KafkaProducer(bootstrap_servers=self.__uri, value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+        print(f"Fafka >>>\t url {self.__uri}")
+        self.__producer = KafkaProducer(bootstrap_servers=self.__uri,
+                                        value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+
         # print(f"Kafka >>>\t initiated env:{env}")
 
     def get_producer(self):
@@ -444,6 +492,50 @@ class Kafka:
     def send(self, topic, msg):
         self.__producer.send(topic, json.dumps(msg))
 
-    def get_consumer(self, *topic, group_id="group_id", auto_offset_reset='latest'):
-        consumer = KafkaConsumer(*topic, bootstrap_servers=[self.__uri], group_id=group_id, auto_offset_reset=auto_offset_reset)
+    def get_consumer(self, *topic, group_id="group_id", auto_offset_reset='latest', enable_auto_commit=True):
+        consumer = KafkaConsumer(*topic, bootstrap_servers=self.__uri, group_id=group_id,
+                                 auto_offset_reset=auto_offset_reset,
+                                 enable_auto_commit=enable_auto_commit
+                                 )
         return consumer
+
+    def get_admin_client(self) -> KafkaAdminClient:
+        admin_client = KafkaAdminClient(bootstrap_servers=self.__uri)
+        return admin_client
+
+    def get_client(self) -> KafkaClient:
+        client = KafkaClient(bootstrap_servers=self.__uri)
+        return client
+
+    def create_partition(self, topic, group_id="group_id", num=1):
+        """
+        create consumer partition for balance.
+        Parameters
+        ----------
+        topic
+        group_id
+        num
+
+        Returns
+        -------
+
+        """
+        if topic is None:
+            print(f"Kafka>> topic is none!")
+        admin_client = self.get_admin_client()
+        __kafka_consumer = self.get_consumer(topic, group_id=group_id)
+        partitions = __kafka_consumer.partitions_for_topic(topic)
+        if partitions is None:
+            return
+        p_num = len(partitions)
+        if p_num >= num:
+            print(f"Kafka >>>\t topic: {topic}, exist partition num: {p_num}")
+            return
+        else:
+            try:
+                rsp = admin_client.create_partitions({
+                    topic: NewPartitions(num)
+                })
+                print(f"Kafka >>>\t topic: {topic}, create partition num: {num}, result: {rsp}")
+            except Exception as e:
+                print(f"Kafka >>\t topic: {topic}, create partition num: {num}, error: {e}")

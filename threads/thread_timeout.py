@@ -39,7 +39,7 @@ def thread_timeout_test():
     def thread_function():
         print("Thread is running.")
         # 执行线程任务
-        for i in range(10):
+        for i in range(5):
             print(f"Thread: {i}")
             time.sleep(1)
         print("Thread execution is complete.")
@@ -50,7 +50,7 @@ def thread_timeout_test():
         future = executor.submit(thread_function)
         # 等待线程任务完成或超时
         try:
-            result = future.result(timeout=5)
+            result = future.result(timeout=10)
         except concurrent.futures.TimeoutError:
             print("Thread execution timed out. Cancelling...")
             future.cancel(True)
@@ -64,7 +64,7 @@ def thread_timeout_2_test():
     def thread_handler():
         print("Thread is running.")
         # 执行线程任务
-        for i in range(10):
+        for i in range(5):
             print(f"Thread: {i}")
             time.sleep(1)
         print("Thread execution is complete.")
@@ -86,7 +86,7 @@ def thread_timeout_2_test():
     def callback():
         print("receive timeout callback")
 
-    thread_utils.run_thread_with_timeout(handler_func=thread_handler, timeout=5, timeout_callback_func=callback)
+    thread_utils.run_thread_with_timeout(handler_func=thread_handler, timeout=10, timeout_callback_func=callback)
     print("\tmain thread running\n")
 
 

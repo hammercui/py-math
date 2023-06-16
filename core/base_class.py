@@ -11,8 +11,8 @@ from core.config_class import LoadConfig
 from core.db_class import MySql, Mongo, Redis, Kafka
 from core.time_class import Time
 from core.tools_class import Tools
-from core.crypto_class import Crypto
-from core.pyasync_class import Async
+# from core.crypto_class import Crypto
+# from core.pyasync_class import Async
 from core.singleton_class import Singleton
 
 
@@ -39,7 +39,7 @@ class Core(Singleton):
             log_name = caller.filename.split('\\')[-1]
         self.__logger.init(self.__env, log_name=log_name, path=log_path)
         self.__config.init(self.__env)
-        self.__crypto = Crypto()
+        # self.__crypto = Crypto()
         self.__time = Time()
         self.__tools = Tools()
         self.__kafka = None
@@ -68,9 +68,9 @@ class Core(Singleton):
             self.__kafka = Kafka(env=self.__env)
         return self.__kafka
 
-    @property
-    def crypto(self):
-        return self.__crypto
+    # @property
+    # def crypto(self):
+    #     return self.__crypto
 
     @property
     def time(self):
@@ -80,7 +80,7 @@ class Core(Singleton):
     def tools(self):
         return self.__tools
 
-    def get_mysql(self, db="test", force_db=False):
+    def get_mysql(self, db="metabus", force_db=False):
         if db in self.__mysql_dict:
             return self.__mysql_dict[db]
         mysql = MySql(env=self.env, db=db, force_db=force_db)
@@ -95,7 +95,7 @@ class Core(Singleton):
         self.__mongo_dict[db] = mongo
         return mongo
 
-    def get_redis(self, db=0):
+    def get_redis(self, db=0) -> Redis:
         if db in self.__redis_dict:
             return self.__redis_dict[db]
         redis = Redis(env=self.env, db=db)

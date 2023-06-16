@@ -124,3 +124,12 @@ class Time:
         local_timestamp = Time.timestr2timestamp(local_timestr)
         utc_timestamp = datetime.datetime.utcfromtimestamp(local_timestamp).timestamp()
         return int(utc_timestamp)
+
+    @staticmethod
+    def today():
+        today = datetime.datetime.today()
+        return today.strftime("%Y-%m-%d")
+
+    @staticmethod
+    def today_utc():
+        return datetime.datetime.utcnow().date()

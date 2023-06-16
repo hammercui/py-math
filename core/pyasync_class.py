@@ -7,7 +7,6 @@ class TimeoutError(RuntimeError):
 
 class AsyncCall(object):
     def __init__(self, fnc, callback=None):
-        self.Result = None
         self.Callable = fnc
         self.Callback = callback
 
@@ -28,6 +27,12 @@ class AsyncCall(object):
         if self.Callback:
             self.Callback(self.Result)
 
+    def __get__(self, instance, owner):
+        def wrapper(*args, **kwargs):
+            self.Thread = threading.Thread(target=self.run, name=self.Callable.__name__, args=args, kwargs=kwargs)
+            self.Thread.start()
+        return wrapper
+
 
 class AsyncMethod(object):
     def __init__(self, fnc, callback=None):
@@ -39,16 +44,10 @@ class AsyncMethod(object):
 
 
 def Async(fnc=None, callback=None):
-    """
-    异步方法装饰器
-    :param fnc:
-    :param callback:
-    :return:
-    """
     if fnc is None:
-        def AddAsyncCallback(fnc):
-            return AsyncMethod(fnc, callback)
+        def AddAsyncCallback(add_fnc):
+            return AsyncMethod(add_fnc, callback)
 
         return AddAsyncCallback
     else:
-        return AsyncMethod(fnc, callback)
+        return AsyncCall(fnc, callback)
