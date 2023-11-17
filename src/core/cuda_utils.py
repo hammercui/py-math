@@ -1,6 +1,6 @@
 import torch.cuda
 
-from core.base_class import Core
+from src.core.base_class import Core
 
 
 class CudaUtils:

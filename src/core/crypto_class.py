@@ -1,5 +1,3 @@
-import sys
-import os
 import base64
 import random
 from Crypto.Cipher import AES
@@ -10,8 +8,8 @@ from Crypto.Cipher import PKCS1_v1_5
 # cur_abs_path = os.path.dirname(os.path.abspath(__file__))
 # if cur_abs_path not in sys.path:
 #     sys.path.append(cur_abs_path)
-from core.config_class import LoadConfig
-from core.singleton_class import Singleton
+from src.core.config_class import LoadConfig
+from src.core.singleton_class import Singleton
 
 
 class Crypto(Singleton):

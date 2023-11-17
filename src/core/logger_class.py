@@ -1,5 +1,4 @@
 import os
-import sys
 import gzip
 import time
 import json
@@ -13,10 +12,10 @@ from logging.handlers import TimedRotatingFileHandler, RotatingFileHandler
 # cur_abs_path = os.path.dirname(os.path.abspath(__file__))
 # if cur_abs_path not in sys.path:
 #     sys.path.append(cur_abs_path)
-from core.singleton_class import Singleton
-from core.time_class import Time
-from core.config_class import LoadConfig, ENV_LOCAL, ENV_DEV
-from core.tools_class import Tools
+from src.core.singleton_class import Singleton
+from src.core.time_class import Time
+from src.core.config_class import LoadConfig, ENV_LOCAL, ENV_DEV
+from src.core.tools_class import Tools
 
 
 class Logger(Singleton):

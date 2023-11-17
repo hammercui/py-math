@@ -1,6 +1,6 @@
 import os
 from environs import Env
-from core.singleton_class import Singleton
+from src.core.singleton_class import Singleton
 
 ENV_LOCAL = "local"
 ENV_DEV = "dev"

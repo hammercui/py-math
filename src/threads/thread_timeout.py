@@ -3,7 +3,7 @@ import time
 from threading import Thread
 from time import sleep, ctime
 
-from utils import thread_utils
+from src.utils import thread_utils
 
 
 def func(name, sec):

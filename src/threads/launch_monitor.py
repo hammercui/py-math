@@ -7,12 +7,12 @@ import psutil
 
 
 
-abs_path_src = os.path.abspath("../")
+abs_path_src = os.path.abspath("../../")
 print(abs_path_src)
 sys.path.append(abs_path_src)
 
-from core.argument_tools import ArgumentTools
-from core.base_class import Core
+from src.core.argument_tools import ArgumentTools
+from src.core import Core
 
 if __name__ == "__main__":
     env, region, role = ArgumentTools.parsing_params(['env', 'region', 'role'])
