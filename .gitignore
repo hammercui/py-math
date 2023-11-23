@@ -11,3 +11,4 @@ __pycache__
 /output/*
 poetry.lock
 *.log
+venv/

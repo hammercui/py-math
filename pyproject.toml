@@ -34,14 +34,13 @@ matplotlib="3.8.1"
 numpy="1.26.1"
 wandb="0.15.12"
 
-
+#设置poetry包管理工具的自定义pypi镜像源配置
+# [[tool.poetry.source]]
+# name = "tencent"
+# url = "http://mirrors.cloud.tencent.com/pypi/simple/"
+# default = true
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-#设置poetry包管理工具的自定义pypi镜像源配置
-[[tool.poetry.source]]
-name = "tencent"
-url = "http://mirrors.cloud.tencent.com/pypi/simple/"
-default = true
