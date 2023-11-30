@@ -14,7 +14,7 @@ from kafka import KafkaProducer, KafkaConsumer, KafkaAdminClient, KafkaClient
 # cur_abs_path = os.path.dirname(os.path.abspath(__file__))
 # if cur_abs_path not in sys.path:
 #     sys.path.append(cur_abs_path)
-from src.core import Logger
+from src.core.logger_class import Logger
 from src.core.config_class import LoadConfig
 
 logger = Logger.instance()
