@@ -1,6 +1,6 @@
 import unittest
 
-from ai.default_args.lstm import get_lstm_default
+from src.ai.default_args.lstm import get_lstm_default
 
 
 class TestDemo(unittest.TestCase):

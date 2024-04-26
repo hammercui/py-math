@@ -6,14 +6,17 @@
 * 《计算机程序的构造与解释》
 
 ## 工程目录
-
+* doc 学习文档相关
+  * setup.md启动相关的文档
+* config配置文件  
 * src 通用的库，工具和工程
-* ai ai相关的工程
-  * exp 实验相关模块：即训练和推理的代码
-  * models 定义模型结构
+    * ai ai相关的工程
+        * exp 实验相关模块：即训练和推理的代码
+        * models 定义模型结构
    
-* algorithm 算法相关工程
-* sicp sicp书本相关
+    * algorithm 算法相关工程
+    * sicp sicp书本相关
+    
 
 ### 依赖管理方案三(推荐)
 

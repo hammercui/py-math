@@ -1,8 +1,8 @@
 import numpy as np
 
-from ai.zhaiteng.lesson1 import sigmoid
-from ai.zhaiteng.lesson1_dataset import get_mnist_train_loader
-from ai.zhaiteng.lesson1_softmax import softmax
+from src.ai.zhaiteng.lesson1 import sigmoid
+from src.ai.zhaiteng import get_mnist_train_loader
+from src.ai.zhaiteng import softmax
 
 
 class MinistModel:
