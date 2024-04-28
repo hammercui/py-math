@@ -50,6 +50,7 @@ class PolicyTrainer(BaseTrainer):
                     state = state[0]
                     done = False
                     while not done:
+                        env.render()  # 渲染小车
                         action = agent.take_action(state)
                         result = env.step(action)
                         next_state, reward, done, _ , _ = result

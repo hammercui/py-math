@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pytech"
+name = "math-learn"
 version = "0.1.0"
 description = ""
 authors = ["sir"]
