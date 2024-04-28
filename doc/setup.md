@@ -14,4 +14,4 @@ pip install git+ssh://git@gitlab.53site.com/ai/pycore.git --upgrade
 
 安装windows版本nvidia cuda
 
-pip install torch==2.0.1+cu118 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install torch==2.0.1+cu118 --index-url https://download.pytorch.org/whl/cu118
