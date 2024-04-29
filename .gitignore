@@ -1,0 +1,16 @@
+.vscode
+*.pdf
+.idea
+src/helper/access_helper.py
+/lzo-2.10.tar.gz
+/lzo-2.10/
+.idea
+src/dictionary/output/*
+__pycache__
+/log/
+/output/*
+poetry.lock
+*.log
+venv/
+src/ai/zhaiteng/data/
+tests
