@@ -47,7 +47,6 @@ class PolicyTrainer(BaseTrainer):
                         'dones': []
                     }
                     state = env.reset()
-                    # state = state[0]
                     done = False
                     while not done:
 
@@ -67,7 +66,7 @@ class PolicyTrainer(BaseTrainer):
                     return_list.append(episode_return)
                     agent.update(transition_dict)
                     if (i_episode + 1) % 10 == 0:
-                        self.draw_return_line(return_list, env_name=env_name, episode=i_episode)
+                        self.draw_return_line(return_list, env_name=env_name, iterate=i)
                         pbar.set_postfix({
                             'episode':
                                 '%d' % (num_episodes / 10 * i + i_episode + 1),
