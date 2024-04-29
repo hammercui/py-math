@@ -5,7 +5,7 @@ from pycore.base import Core
 
 from src.rl.config.model_config import ModelConfig
 import matplotlib
-# matplotlib.use('TkAgg')
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 

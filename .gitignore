@@ -13,3 +13,4 @@ poetry.lock
 *.log
 venv/
 src/ai/zhaiteng/data/
+tests

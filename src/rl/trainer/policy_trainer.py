@@ -24,8 +24,8 @@ class PolicyTrainer(BaseTrainer):
     def train(self):
         model_config = self.gen_model_config()
         # 1 init env
-        env_name = "CartPole-v0"
-        env = gym.make(env_name)
+        env_name = "CartPole-v1"
+        env = gym.make(env_name, render_mode="rgb_array")
         # env.seed(model_config.random_seed)
         model_config.state_dim = env.observation_space.shape[0]
         model_config.action_dim = env.action_space.n
@@ -50,9 +50,12 @@ class PolicyTrainer(BaseTrainer):
                     state = state[0]
                     done = False
                     while not done:
-                        env.render()  # 渲染小车
+
                         action = agent.take_action(state)
                         result = env.step(action)
+
+                        env.render()  # 渲染
+
                         next_state, reward, done, _ , _ = result
                         transition_dict['states'].append(state)
                         transition_dict['actions'].append(action)
