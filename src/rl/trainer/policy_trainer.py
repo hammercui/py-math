@@ -24,8 +24,8 @@ class PolicyTrainer(BaseTrainer):
     def train(self):
         model_config = self.gen_model_config()
         # 1 init env
-        env_name = "CartPole-v1"
-        env = gym.make(env_name, render_mode="rgb_array")
+        env_name = "CartPole-v0"
+        env = gym.make(env_name)
         # env.seed(model_config.random_seed)
         model_config.state_dim = env.observation_space.shape[0]
         model_config.action_dim = env.action_space.n
@@ -47,7 +47,7 @@ class PolicyTrainer(BaseTrainer):
                         'dones': []
                     }
                     state = env.reset()
-                    state = state[0]
+                    # state = state[0]
                     done = False
                     while not done:
 
@@ -56,7 +56,7 @@ class PolicyTrainer(BaseTrainer):
 
                         env.render()  # 渲染
 
-                        next_state, reward, done, _ , _ = result
+                        next_state, reward, done, _  = result
                         transition_dict['states'].append(state)
                         transition_dict['actions'].append(action)
                         transition_dict['next_states'].append(next_state)
@@ -67,14 +67,17 @@ class PolicyTrainer(BaseTrainer):
                     return_list.append(episode_return)
                     agent.update(transition_dict)
                     if (i_episode + 1) % 10 == 0:
+                        self.draw_return_line(return_list, env_name=env_name, episode=i_episode)
                         pbar.set_postfix({
                             'episode':
                                 '%d' % (num_episodes / 10 * i + i_episode + 1),
                             'return':
                                 '%.3f' % np.mean(return_list[-10:])
                         })
-                        self.draw_return_line(return_list,env_name=env_name, episode=i_episode)
+
                     pbar.update(1)
+
+
 
 
 

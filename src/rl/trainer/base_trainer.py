@@ -5,7 +5,7 @@ from pycore.base import Core
 
 from src.rl.config.model_config import ModelConfig
 import matplotlib
-matplotlib.use('TkAgg')
+# matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 
@@ -30,7 +30,7 @@ class BaseTrainer(ABC):
         plt.legend()
         plt.savefig(png_path)  # 保存图表为PNG文件
         Core.instance().logger.info(f"save png: {png_path}")
-        plt.close()  # 关闭图表窗口，防止资源占用
+        # plt.close()  # 关闭图表窗口，防止资源占用
 
 
     # ------------ 抽象方法 ----------------------- #
